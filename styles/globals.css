@@ -15,16 +15,16 @@ body {
 .GrapItemBody{
   padding: 40px 0;
 }
+
+.fontSize30px {
+  font-size: 30px;
+}
+/* End Common */
 .FlexCenterItem{
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.fontSize30px {
-  font-size: 30px;
-}
-/* End Common */
-
 
 /* fontstyled */
 @font-face {
@@ -43,10 +43,7 @@ body {
 .ConTainerFull{
   width: 100%;
 }
-.ConTainerFluid{
-  width: 1280px;
-  margin: 0 auto;
-}
+
 .Header,
 .Footer{
   background-color: #200027;
@@ -69,12 +66,6 @@ body {
   justify-content: center;
   flex-direction: column;
   padding: 40px
-}
-.ItemBox01{
-  display: flex;
-  justify-content: center;
-  position: relative;
-  align-items: center;
 }
 .Img01, .Img02{
   padding: 0 40px;
@@ -170,4 +161,60 @@ body {
 .ItemFooter03{
   font-size: 21px;
   padding: 20px;
+}
+@media screen and (min-width: 720px){
+  .ConTainerFluid{
+    width: 1280px;
+    margin: 0 auto;
+  }
+  
+}
+@media screen and (max-width: 720px) { 
+  .GrapItemBody{
+    padding: 20px 0;
+  }
+  .ConTainerFluid{
+    width: 100%;
+  }
+  .ItemBox01{
+    flex-direction: column;
+  }
+  .Img03{
+    background-image: url("../public/Static/Asset\ 3.png");
+    width: 100%;
+    height: 55px;
+    font-size: 22px;
+    font-family: UTMAvoBold;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .ItemBox03{
+    justify-content: space-around;
+    font-style: Bold;
+    flex-direction: column;
+    font-family: UTMAvoBold;
+  }
+  .SubItemBox03,
+  .SubItemBox05{
+    margin: 40px 0;
+  }
+  .ImgItemBox04{
+    width: 100%;
+    height: 67px;
+    font-size: 36px;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .SubFooterBox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .ItemFooter02{
+    flex-direction: column;
+  }
+  .IconBoxItemFooter02:last-child{
+    padding: 20px;
+  }
 }

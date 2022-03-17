@@ -14,7 +14,7 @@ function HomePage() {
             </div>
             <div className="Bodybox">
                 <div className="ConTainerFluid">
-                    <div className="ItemBox01 textWhite GrapItemBody">
+                    <div className="ItemBox01 FlexCenterItem textWhite GrapItemBody">
                         <img className="Img01" src="/Static/Asset 1.png" />
                         <div className="Img02">
                             <p>Connect Wallet</p>
@@ -22,15 +22,15 @@ function HomePage() {
                     </div>
                     <div className="GrapItemBody">
                         <div className="ItemBox02 FlexCenterItem GrapItemBody textWhite">
-                        <div className="Img03 FlexCenterItem">
-                            <p className="FlexCenterItem">
-                                Buy SoLotto NFT at USDC
-                            </p>
-                            <img className="iconNFT" src="/Static/Asset 4.png"/>
-                            <p className="FlexCenterItem">
-                                (Solana Chain)
-                            </p>
-                        </div>
+                            <div className="Img03 FlexCenterItem">
+                                <p className="FlexCenterItem">
+                                    Buy SoLotto NFT at USDC
+                                </p>
+                                <img className="iconNFT" src="/Static/Asset 4.png"/>
+                                <p className="FlexCenterItem">
+                                    (Solana Chain)
+                                </p>
+                            </div>
                         </div>
                         <div className="ItemBox03 FlexCenterItem GrapItemBody">
                             <div className="SubItemBox03 FlexCenterItem">
@@ -66,7 +66,7 @@ function HomePage() {
                 </div>
             </div>
             <div className="Footer">
-                <div className="ConTainerFluid">
+                <div className="ConTainerFluid SubFooterBox">
                     <div className="ItemFooter01 fontSize30px">
                         <p className="">Connect with us</p>
                     </div>
@@ -76,7 +76,7 @@ function HomePage() {
                             <img className="ImgItemFooter02" src="/Static/Asset 12.png" />
                             <img className="ImgItemFooter02" src="/Static/Asset 13.png" />
                         </div>
-                        <div className="IconBoxItemFooter02 ">
+                        <div className="IconBoxItemFooter02 FlexCenterItem">
                             <img className="ImgItemFooter02" src="/Static/Asset 14.png" />
                             <img className="ImgItemFooter02" src="/Static/Asset 15.png" />
                         </div>
