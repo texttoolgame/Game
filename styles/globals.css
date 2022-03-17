@@ -1,16 +1,148 @@
+/* Common */
 html,
 body {
-  padding: 0;
-  margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
 * {
   box-sizing: border-box;
+  padding: 0;
+  margin:0;
+}
+.textWhite{
+  color: white!important;
+}
+.GrapItemBody{
+  padding: 40px;
+}
+.FlexCenterItem{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.fontSize30px {
+  font-size: 30px;
+}
+/* End Common */
+
+
+/* fontstyled */
+@font-face {
+  font-family: JosefinSansBold;
+  src: url("./font/JosefinSans-Bold.ttf");
+}
+@font-face {
+  font-family: UTMAvo;
+  src: url("./font/UTMAvo.ttf");
+}
+@font-face {
+  font-family: UTMAvoBold;
+  src: url("./font/UTMAvoBold.ttf");
+}
+/* endfont */
+.Header,
+.Footer{
+  background-color: #200027;
+  font-style: JosefinSansBold;
+  color: white;
+}
+.titleBox{
+  display: flex;
+}
+.titleBox > a{
+  padding: 40px;
+}
+.Bodybox{
+  background-image: url("../public/Static/Asset\ 16.png");
+  background-size: cover;
+  width: 100vw;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 40px
+}
+.ItemBox01{
+  display: flex;
+  justify-content: center;
+  position: relative;
+  align-items: center;
+}
+.Img01, .Img02{
+  padding: 0 40px;
+}
+.Img01{
+  width: 300px;
+  height: auto;
+}
+.Img02{
+  background-image: url("../public/Static/Asset\ 2.png");
+  background-size: cover;
+  width: 360px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+}
+.iconNFT{
+  height: 50%;
+  width: auto;
+  background-size: cover;
+  margin: auto 20px;
+}
+.Img03{
+  background-image: url("../public/Static/Asset\ 3.png");
+  width: 1000px;
+  height: 87px;
+  font-size: 30px;
+  font-family: UTMAvoBold;
+  font-style: Bold;
+}
+.ItemBox03{
+  justify-content: space-around;
+  font-style: Bold;
+  font-family: UTMAvoBold;
+}
+.SubItemBox03,
+.SubItemBox05{
+  width: 350px;
+  height: 350px;
+  color: black;
+  padding: auto;
+  background-color: rgba(228, 226, 228, 0.5);
+  flex-direction: column;
+  font-size: 30px;
+  border-radius: 5%;
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.2);
+}
+.ImgItem03{
+  width: au;
+  height: auto;
+}
+.SubItemBox03 > p{
+  padding-top: 40px;
+}
+.ImgItemBox04{
+  background-image: url('../public/Static/Asset\ 8.png');
+  width: 800px;
+  height: 87px;
+  font-size: 30px;
+}
+.ImgItemBox05{
+  margin-right: -20px;
+  background-size: cover;
+}
+.ItemBox05{
+  font-family: UTMAvoBold;
+}
+.ItemFooter01{
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px 40px;
+}
+.ImgItemFooter02{
+  width: auto;
+  height: 70px;
+  background-size: cover;
 }
