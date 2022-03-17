@@ -62,18 +62,18 @@ function HomePage() {
                     <p className="">Connect with us</p>
                 </div>
                 <div className="ItemFooter02">
-                    <div className="FlexCenterItem">
+                    <div className="IconBoxItemFooter02 FlexCenterItem">
                         <img className="ImgItemFooter02" src="/Static/Asset 11.png" />
                         <img className="ImgItemFooter02" src="/Static/Asset 12.png" />
                         <img className="ImgItemFooter02" src="/Static/Asset 13.png" />
                     </div>
-                    <div>
+                    <div className="IconBoxItemFooter02 ">
                         <img className="ImgItemFooter02" src="/Static/Asset 14.png" />
                         <img className="ImgItemFooter02" src="/Static/Asset 15.png" />
                     </div>
                 </div>
-                <div>
-                    <p></p>
+                <div className="ItemFooter03 FlexCenterItem">
+                    <p>Copyright 2021 Solotto All Right Reserved</p>
                 </div>
             </div>
         </> 
