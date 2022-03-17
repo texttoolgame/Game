@@ -40,6 +40,13 @@ body {
   src: url("./font/UTMAvoBold.ttf");
 }
 /* endfont */
+.ConTainerFull{
+  width: 100%;
+}
+.ConTainerFluid{
+  width: 1280px;
+  margin: 0 auto;
+}
 .Header,
 .Footer{
   background-color: #200027;
@@ -134,7 +141,7 @@ body {
   margin-right: -20px;
   background-size: cover;
 }
-.ItemBox05{
+.ContentBox05{
   font-family: UTMAvoBold;
 }
 .ItemFooter01{
