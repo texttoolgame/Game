@@ -17,7 +17,8 @@ function HomePage() {
                         <p>Connect Wallet</p>
                     </div>
                 </div>
-                <div className="ItemBox02 FlexCenterItem GrapItemBody textWhite">
+                <div className="GrapItemBody">
+                    <div className="ItemBox02 FlexCenterItem GrapItemBody textWhite">
                     <div className="Img03 FlexCenterItem">
                         <p className="FlexCenterItem">
                             Buy SoLotto NFT at USDC
@@ -27,35 +28,39 @@ function HomePage() {
                             (Solana Chain)
                         </p>
                     </div>
+                    </div>
+                    <div className="ItemBox03 FlexCenterItem GrapItemBody">
+                        <div className="SubItemBox03 FlexCenterItem">
+                            <img className="ImgItem03" src="/Static/Asset 5.png"/>
+                            <p className="ContentItem03">Solotto Gold</p>
+                        </div>
+                        <div className="SubItemBox03 FlexCenterItem">
+                            <img className="ImgItem03" src="/Static/Asset 6.png"/>
+                            <p className="ContentItem03">Solotto Bronze</p>
+                        </div>
+                        <div className="SubItemBox03 FlexCenterItem">
+                            <img className="ImgItem03" src="/Static/Asset 7.png"/>
+                            <p className="ContentItem03">Solotto Mini</p>
+                        </div>
+                    </div>
                 </div>
-                <div className="ItemBox03 FlexCenterItem GrapItemBody">
-                    <div className="SubItemBox03 FlexCenterItem">
-                        <img className="ImgItem03" src="/Static/Asset 5.png"/>
-                        <p className="ContentItem03">Solotto Gold</p>
-                    </div>
-                    <div className="SubItemBox03 FlexCenterItem">
-                        <img className="ImgItem03" src="/Static/Asset 6.png"/>
-                        <p className="ContentItem03">Solotto Bronze</p>
-                    </div>
-                    <div className="SubItemBox03 FlexCenterItem">
-                        <img className="ImgItem03" src="/Static/Asset 7.png"/>
-                        <p className="ContentItem03">Solotto Mini</p>
-                    </div>
-                </div>
-                <div className="ItemBox04 FlexCenterItem GrapItemBody textWhite">
+                <div className="GrapItemBody">
+                    <div className="ItemBox04 FlexCenterItem GrapItemBody textWhite">
                     <div className="ImgItemBox04 FlexCenterItem">
                         <p>
                             Buy SoLotto NFT SoLana
                         </p>
                         <img src="/Static/Asset 9.png" className="iconNFT"/>
                     </div>
-                </div>
-                <div className="ItemBox05 FlexCenterItem GrapItemBody">
-                    <div className="SubItemBox05 FlexCenterItem">
-                        <img className="ImgItemBox05" src="/Static/Asset 10.png"/>
-                        <p className="ContentBox05">Solotto SoLMiLL</p>
+                    </div>
+                    <div className="ItemBox05 FlexCenterItem GrapItemBody">
+                        <div className="SubItemBox05 FlexCenterItem">
+                            <img className="ImgItemBox05" src="/Static/Asset 10.png"/>
+                            <p className="ContentBox05">Solotto SoLMiLL</p>
+                        </div>
                     </div>
                 </div>
+                
             </div>
             <div className="Footer">
                 <div className="ItemFooter01 fontSize30px">
