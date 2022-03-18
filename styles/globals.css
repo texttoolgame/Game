@@ -27,17 +27,18 @@ body {
 }
 
 /* fontstyled */
-@font-face {
-  font-family: JosefinSansBold;
-  src: url("./font/JosefinSans-Bold.ttf");
-}
+
 @font-face {
   font-family: UTMAvo;
-  src: url("./font/UTMAvo.ttf");
+  src: url(./font/UTMAvo.ttf);
 }
 @font-face {
   font-family: UTMAvoBold;
-  src: url("./font/UTMAvoBold.ttf");
+  src: url(./font/UTMAvoBold.ttf);
+}
+@font-face {
+  font-family: JosefinSansBold;
+  src: url(./font/JosefinSans-Bold.ttf);
 }
 /* endfont */
 .ConTainerFull{
@@ -47,15 +48,37 @@ body {
 .Header,
 .Footer{
   background-color: #200027;
-  font-style: JosefinSansBold;
+  font-family: JosefinSansBold;
   color: white;
+}
+.Header{
+  position: relative;
 }
 .titleBox{
   display: flex;
   font-size: 18px;
 }
-.titleBox > a{
-  padding: 40px;
+.ItemBox01{
+  flex-direction: column;
+  text-align: center;
+  width: 1062px;
+  margin: 0 auto;
+  color: black;
+  font-size: 38px;
+  font-family: JosefinSansBold;
+}
+.ItemBox01 > p{
+  padding: 10px 0;
+}
+.titleBox > p{
+  padding: 30px;
+}
+.LogoHeader{
+  width: 50px;
+  height: auto;
+  position: absolute;
+  left: 20px;
+  top: 15px;
 }
 .Bodybox{
   background-image: url("../public/Static/Asset\ 16.png");
@@ -65,14 +88,10 @@ body {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  padding: 40px
+  padding: 40px 0;
 }
-.Img01, .Img02{
+.Img02{
   padding: 0 40px;
-}
-.Img01{
-  width: 300px;
-  height: auto;
 }
 .Img02{
   background-image: url("../public/Static/Asset\ 2.png");
@@ -88,7 +107,7 @@ body {
   height: 50%;
   width: auto;
   background-size: cover;
-  margin: auto 20px;
+  margin: auto 10px;
 }
 .Img03{
   background-image: url("../public/Static/Asset\ 3.png");
@@ -97,6 +116,10 @@ body {
   font-size: 36px;
   font-family: UTMAvoBold;
   font-style: Bold;
+  background-position: 50%;
+}
+.Img03 > p {
+  margin: 0 5px;
 }
 .ItemBox03{
   justify-content: space-around;
@@ -125,9 +148,14 @@ body {
 }
 .ImgItemBox04{
   background-image: url('../public/Static/Asset\ 8.png');
-  width: 800px;
+  width: 805px;
   height: 87px;
   font-size: 36px;
+}
+.boderspace{
+  width: 65%;
+  margin: 0 auto;
+  border-bottom: 3px solid black;
 }
 .ImgItemBox05{
   margin-right: -20px;
@@ -163,6 +191,24 @@ body {
   font-size: 21px;
   padding: 20px;
 }
+.TitleContentItemBox06{
+  font-size: 52px;
+  text-align: center;
+  width: 60%;
+  margin: auto;
+}
+.ItemBox06{
+  width: 1054px;
+  font-family: JosefinSansBold;
+  margin: 0 auto;
+}
+.SubBox01ItemBox06{
+  margin: 40px 0;;
+}
+.SubBox01ItemBox06 > p {
+  font-size: 18px;
+  padding: 15px 0;
+}
 /* Pc */
 @media screen and (min-width: 1280px){
   .ConTainerFluid{
@@ -174,27 +220,31 @@ body {
   }
 }
 
+
 /* tablet */
 @media screen and (min-width: 992px) and (max-width: 1280px){
   .BtnHeaderBox{
     display: none;
   }
   .ConTainerFluid{
-    width: 992px;
+    width: 92vw;
     margin: 0 auto;
   }
   .GrapItemBody{
     padding: 20px 0;
   }
+  .ItemBox01{
+    width: 100%;
+    margin: 0 auto;
+  }
   .ItemBox03{
     justify-content: space-evenly;
   }
   .Img03{
-    transform: scale(0.7, 0.7);
     background-position: 50%;
     background-size: contain;
     background-repeat: no-repeat;
-    font-size: 32px;
+    font-size: 28px;
   }
   .SubItemBox03,
   .SubItemBox05{
@@ -210,17 +260,20 @@ body {
     background-position: 50%;
     transform: scale(0.7, 0.7);
   }
+  .ItemBox06{
+    width: 100%;
+  }
+  .ItemFooter01{
+    font-size: 34px;
+  }
 }
 
 /* mobiie */
 @media screen and (min-width: 720px) and (max-width: 992px) { 
-  .GrapItemBody{
-    padding: 20px 0;
-
-  }
+  
   .ConTainerFluid{
-    width: 720px;
-    margin: auto;
+    width: 92vw;
+    margin: 0 auto;
   }
   .Header{
     position: relative;
@@ -255,19 +308,21 @@ body {
     justify-content: center;
     align-items: center;
   }
-  .titleBox > a{
+  .titleBox > p{
     border-bottom: 1px solid #ccc;
     width: 90vw;
     text-align: center;
   }
   .ItemBox01{
     flex-direction: column;
+    font-size: 30px;
+    width: 100%;
   }
   .Img03{
     background-image: url("../public/Static/Asset\ 3.png");
     width: 100%;
-    height: 55px;
-    font-size: 16px;
+    height: 100px;
+    font-size: 22px;
     font-family: UTMAvoBold;
     background-size: contain;
     background-repeat: no-repeat;
@@ -299,9 +354,16 @@ body {
   }
   .ItemFooter02{
     flex-direction: column;
+    padding: 20px 0;
   }
   .IconBoxItemFooter02:last-child{
     padding: 20px;
+  }
+  .ItemBox06{
+    width: 100%;
+  }
+  .TitleContentItemBox06{
+    font-size: 46px;
   }
 }
 @media screen and (max-width: 720px) and (min-width: 576px){ 
@@ -310,11 +372,8 @@ body {
     display: flex;
     justify-content: flex-end;
   }
-  .GrapItemBody{
-    padding: 20px 0;
-  }
   .ConTainerFluid{
-    width: 100%;
+    width: 92vw;
     margin: auto;
   }
   .Header{
@@ -354,6 +413,8 @@ body {
   }
   .ItemBox01{
     flex-direction: column;
+    font-size: 28px;
+    width: 100%;
   }
   .Img03{
     background-image: url("../public/Static/Asset\ 3.png");
@@ -395,6 +456,9 @@ body {
   .IconBoxItemFooter02:last-child{
     padding: 20px;
   }
+  .TitleContentItemBox06{
+    font-size: 40px;
+  }
 }
 @media screen and (max-width: 576px) and (min-width: 390px) { 
   .BtnHeaderBox{
@@ -402,11 +466,8 @@ body {
     display: flex;
     justify-content: flex-end;
   }
-  .GrapItemBody{
-    padding: 20px 0;
-  }
   .ConTainerFluid{
-    width: 100%;
+    width: 92vw;
     margin: auto;
   }
   .Header{
@@ -445,7 +506,8 @@ body {
     text-align: center;
   }
   .ItemBox01{
-    flex-direction: column;
+    font-size: 20px;
+    width: 100%;
   }
   .Img03{
     width: 100%;
@@ -483,11 +545,19 @@ body {
   .ItemFooter02{
     flex-direction: column;
   }
+  .IconBoxItemFooter02{
+    padding: 20px 0;
+  }
   .IconBoxItemFooter02:last-child{
     padding: 20px;
   }
+  .TitleContentItemBox06{
+    font-size: 36px;
+  }
+  
 }
 @media screen and (max-width: 391px) {
+  
   .Img03{
     font-size: 10px;
   }
@@ -498,9 +568,41 @@ body {
     margin: auto 10px;
   }
   .ItemFooter01{
-    font-size: 28px;
+    font-size: 26px;
   }
   .ItemFooter03 {
     font-size: 12px;
 }
 }
+/* common resposmobile */
+@media screen and (max-width: 1280px){
+  .Img03{
+    width: 100vw;
+  }
+}
+@media screen and (max-width: 992px) {
+  .LogoHeader{
+    left: 47%;
+  }
+  .GrapItemBody{
+    padding: 20px 0;
+  }
+  .Img03{
+    flex-direction: column;
+  }
+  .ItemBox06{
+    width: 100%;
+  }
+  .IconBoxItemFooter02{
+    padding: 20px 0;
+  }
+  .IconBoxItemFooter02 > .ImgItemFooter02 {
+    height: 140px;
+    width: auto;
+  }
+  .ItemFooter01{
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+/* End common resposmobile */
