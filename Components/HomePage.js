@@ -1,14 +1,38 @@
-import React from "react";
-import {ConTainerFull, ConTainerFluid} from "../styles/StyledComponents"
-
+import React, {useRef, useEffect} from "react";
+import Link from 'next/link';
+import { AiOutlineMenu, AiOutlineClose} from "react-icons/ai";
 function HomePage() {
+    const btnMenu = useRef();
+    const btnCloseMenu = useRef();
+    const menuBox = useRef();
+    const openMenu = () =>{
+        btnCloseMenu.current.style.display = "block"
+        btnMenu.current.style.display = "none"
+        menuBox.current.style.display= "block"
+    }
+    const closeMenu = () => {
+        btnMenu.current.style.display = "block";
+        btnCloseMenu.current.style.display = "none"
+        menuBox.current.style.display= "none";
+    }
+    useEffect(()=>{
+        console.log(btnMenu)
+    },[])
     return (
         <>
-            <div className="Header ">
-                <div className="ConTainerFluid FlexCenterItem">
+            <div className="Header">
+                <button ref={btnMenu} onClick={openMenu} className="BtnMenuResposive">
+                    <AiOutlineMenu></AiOutlineMenu>
+                </button>
+                <button ref={btnCloseMenu} onClick={closeMenu} className="BtnCloseResposive">
+                    <AiOutlineClose></AiOutlineClose>
+                </button>
+                <div ref={menuBox} className="ResposiveMenuMobile">
+                    <div className="ConTainerFluid FlexCenterItem">
                     <div className="titleBox">
                         <a>Our Misson</a>
                         <a>About MillionairaMaker</a>
+                    </div>
                     </div>
                 </div>
             </div>
@@ -33,18 +57,24 @@ function HomePage() {
                             </div>
                         </div>
                         <div className="ItemBox03 FlexCenterItem GrapItemBody">
-                            <div className="SubItemBox03 FlexCenterItem">
-                                <img className="ImgItem03" src="/Static/Asset 5.png"/>
-                                <p className="ContentItem03">Solotto Gold</p>
-                            </div>
-                            <div className="SubItemBox03 FlexCenterItem">
-                                <img className="ImgItem03" src="/Static/Asset 6.png"/>
-                                <p className="ContentItem03">Solotto Bronze</p>
-                            </div>
-                            <div className="SubItemBox03 FlexCenterItem">
-                                <img className="ImgItem03" src="/Static/Asset 7.png"/>
-                                <p className="ContentItem03">Solotto Mini</p>
-                            </div>
+                            <Link href="/gold">
+                                <div className="SubItemBox03 FlexCenterItem">
+                                    <img className="ImgItem03" src="/Static/Asset 5.png"/>
+                                    <p className="ContentItem03">Solotto Gold</p>
+                                </div>
+                            </Link>
+                            <Link href="/bronze">
+                                <div className="SubItemBox03 FlexCenterItem">
+                                    <img className="ImgItem03" src="/Static/Asset 6.png"/>
+                                    <p className="ContentItem03">Solotto Bronze</p>
+                                </div>
+                            </Link>
+                            <Link href="/mini">
+                                <div className="SubItemBox03 FlexCenterItem">
+                                    <img className="ImgItem03" src="/Static/Asset 7.png"/>
+                                    <p className="ContentItem03">Solotto Mini</p>
+                                </div>
+                            </Link>
                         </div>
                     </div>
                     <div className="GrapItemBody">
@@ -67,18 +97,21 @@ function HomePage() {
             </div>
             <div className="Footer">
                 <div className="ConTainerFluid SubFooterBox">
-                    <div className="ItemFooter01 fontSize30px">
-                        <p className="">Connect with us</p>
-                    </div>
+                    
                     <div className="ItemFooter02">
                         <div className="IconBoxItemFooter02 FlexCenterItem">
                             <img className="ImgItemFooter02" src="/Static/Asset 11.png" />
                             <img className="ImgItemFooter02" src="/Static/Asset 12.png" />
                             <img className="ImgItemFooter02" src="/Static/Asset 13.png" />
                         </div>
-                        <div className="IconBoxItemFooter02 FlexCenterItem">
-                            <img className="ImgItemFooter02" src="/Static/Asset 14.png" />
-                            <img className="ImgItemFooter02" src="/Static/Asset 15.png" />
+                        <div className="IconBoxItemFooter02 ">
+                            <div className="ItemFooter01 fontSize30px">
+                                <p className="">Connect with us</p>
+                            </div>
+                            <div className="FlexCenterItem">
+                                <img className="ImgItemFooter02" src="/Static/Asset 14.png" />
+                                <img className="ImgItemFooter02" src="/Static/Asset 15.png" />
+                            </div>
                         </div>
                     </div>
                     <div className="ItemFooter03 FlexCenterItem">

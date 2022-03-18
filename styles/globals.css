@@ -153,7 +153,7 @@ body {
   padding: 10px;
 }
 .IconBoxItemFooter02{
-  padding: 0 60px
+  padding: 0 60px;
 }
 .IconBoxItemFooter02:last-child{
   padding-right: 100px;
@@ -162,38 +162,103 @@ body {
   font-size: 21px;
   padding: 20px;
 }
-@media screen and (min-width: 1200px){
+/* Pc */
+@media screen and (min-width: 1280px){
   .ConTainerFluid{
     width: 1280px;
     margin: 0 auto;
   }
+  .BtnMenuResposive,
+  .BtnCloseResposive{
+    display: none;
+  }
 }
-@media screen and (min-width: 720px) and (max-width: 1200px){
+
+/* tablet */
+@media screen and (min-width: 992px) and (max-width: 1280px){
+  .BtnMenuResposive,
+  .BtnCloseResposive{
+    display: none;
+  }
   .ConTainerFluid{
-    width: 100%;
+    width: 992px;
     margin: 0 auto;
   }
-  .ItemBox03{
-    flex-direction: column;
+  .GrapItemBody{
+    padding: 20px;
   }
-  .SubItemBox03{
+  .ItemBox03{
+    justify-content: space-evenly;
+  }
+  .Img03{
+    transform: scale(0.7, 0.7);
+    background-position: 50%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    font-size: 32px;
+  }
+  .SubItemBox03,
+  .SubItemBox05{
     margin: 40px 0;
+    transform: scale(0.7, 0.7);
   }
   .ImgItemBox04{
     width: 100%;
     height: 115px;
     font-size: 36px;
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
+    background-position: 50%;
+    transform: scale(0.7, 0.7);
   }
 }
-@media screen and (max-width: 720px) { 
+
+/* mobiie */
+@media screen and (max-width: 992px) { 
   .GrapItemBody{
     padding: 20px;
   }
   .ConTainerFluid{
-    width: 100%;
+    width: 720px;
     margin: auto;
+  }
+  .Header{
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    transition: 2s;
+  }
+  .BtnMenuResposive,
+  .BtnCloseResposive{
+    background: none;
+    color: white;
+    font-style: bold;
+    font-size: 40px;
+    margin: 10px 20px;
+    border: none;
+  }
+  .BtnCloseResposive{
+    display: none;
+  }
+  .ResposiveMenuMobile{
+    height: 100vh;
+    display: none;
+    background-color: #200027;
+    position: absolute;
+    top: 69px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+  }
+  .titleBox{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .titleBox > a{
+    border-bottom: 1px solid #ccc;
+    width: 90vw;
+    text-align: center;
   }
   .ItemBox01{
     flex-direction: column;
