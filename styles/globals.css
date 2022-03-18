@@ -304,3 +304,93 @@ body {
     padding: 20px;
   }
 }
+@media screen and (max-width: 720px) { 
+  .GrapItemBody{
+    padding: 20px;
+  }
+  .ConTainerFluid{
+    width: 100%;
+    margin: auto;
+  }
+  .Header{
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    transition: 2s;
+  }
+  .BtnMenuResposive,
+  .BtnCloseResposive{
+    background: none;
+    color: white;
+    font-style: bold;
+    font-size: 40px;
+    margin: 10px 20px;
+    border: none;
+  }
+  .BtnCloseResposive{
+    display: none;
+  }
+  .ResposiveMenuMobile{
+    height: 100vh;
+    display: none;
+    background-color: #200027;
+    position: absolute;
+    top: 69px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+  }
+  .titleBox{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .titleBox > a{
+    border-bottom: 1px solid #ccc;
+    width: 90vw;
+    text-align: center;
+  }
+  .ItemBox01{
+    flex-direction: column;
+  }
+  .Img03{
+    background-image: url("../public/Static/Asset\ 3.png");
+    width: 100%;
+    height: 55px;
+    font-size: 16px;
+    font-family: UTMAvoBold;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50%;
+  }
+  .ItemBox03{
+    justify-content: space-around;
+    font-style: Bold;
+    flex-direction: column;
+    font-family: UTMAvoBold;
+  }
+  .SubItemBox03,
+  .SubItemBox05{
+    margin: 40px 0;
+  }
+  .ImgItemBox04{
+    width: 100%;
+    height: 67px;
+    font-size: 28px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50%;
+  }
+  .SubFooterBox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .ItemFooter02{
+    flex-direction: column;
+  }
+  .IconBoxItemFooter02:last-child{
+    padding: 20px;
+  }
+}
