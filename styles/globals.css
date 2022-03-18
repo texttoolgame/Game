@@ -184,7 +184,7 @@ body {
     margin: 0 auto;
   }
   .GrapItemBody{
-    padding: 20px;
+    padding: 20px 0;
   }
   .ItemBox03{
     justify-content: space-evenly;
@@ -213,9 +213,10 @@ body {
 }
 
 /* mobiie */
-@media screen and (max-width: 992px) { 
+@media screen and (min-width: 720px) and (max-width: 992px) { 
   .GrapItemBody{
-    padding: 20px;
+    padding: 20px 0;
+
   }
   .ConTainerFluid{
     width: 720px;
@@ -303,14 +304,14 @@ body {
     padding: 20px;
   }
 }
-@media screen and (max-width: 720px) { 
+@media screen and (max-width: 720px) and (min-width: 576px){ 
   .BtnHeaderBox{
     width: 100%;
     display: flex;
     justify-content: flex-end;
   }
   .GrapItemBody{
-    padding: 20px;
+    padding: 20px 0;
   }
   .ConTainerFluid{
     width: 100%;
@@ -395,14 +396,14 @@ body {
     padding: 20px;
   }
 }
-@media screen and (max-width: 576px) { 
+@media screen and (max-width: 576px) and (min-width: 390px) { 
   .BtnHeaderBox{
     width: 100%;
     display: flex;
     justify-content: flex-end;
   }
   .GrapItemBody{
-    padding: 20px;
+    padding: 20px 0;
   }
   .ConTainerFluid{
     width: 100%;
@@ -485,4 +486,21 @@ body {
   .IconBoxItemFooter02:last-child{
     padding: 20px;
   }
+}
+@media screen and (max-width: 391px) {
+  .Img03{
+    font-size: 10px;
+  }
+  .iconNFT {
+    height: 35%;
+    width: auto;
+    background-size: cover;
+    margin: auto 10px;
+  }
+  .ItemFooter01{
+    font-size: 28px;
+  }
+  .ItemFooter03 {
+    font-size: 12px;
+}
 }
