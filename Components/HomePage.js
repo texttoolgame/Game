@@ -1,4 +1,4 @@
-import React, {useRef, useEffect} from "react";
+import React, {useRef} from "react";
 import Link from 'next/link';
 import { AiOutlineMenu, AiOutlineClose} from "react-icons/ai";
 function HomePage() {
@@ -18,9 +18,6 @@ function HomePage() {
         menuBox.current.style.display= "none";
         Header.current.style.position= "relative";
     }
-    useEffect(()=>{
-        console.log(btnMenu)
-    },[])
     return (
         <>  
             <div ref={Header} className="ConTainerFull">
