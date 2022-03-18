@@ -5,34 +5,41 @@ function HomePage() {
     const btnMenu = useRef();
     const btnCloseMenu = useRef();
     const menuBox = useRef();
+    const Header = useRef();
     const openMenu = () =>{
         btnCloseMenu.current.style.display = "block"
         btnMenu.current.style.display = "none"
         menuBox.current.style.display= "block"
+        Header.current.style.position= "fixed"
     }
     const closeMenu = () => {
         btnMenu.current.style.display = "block";
         btnCloseMenu.current.style.display = "none"
         menuBox.current.style.display= "none";
+        Header.current.style.position= "relative";
     }
     useEffect(()=>{
         console.log(btnMenu)
     },[])
     return (
-        <>
-            <div className="Header">
-                <button ref={btnMenu} onClick={openMenu} className="BtnMenuResposive">
-                    <AiOutlineMenu></AiOutlineMenu>
-                </button>
-                <button ref={btnCloseMenu} onClick={closeMenu} className="BtnCloseResposive">
-                    <AiOutlineClose></AiOutlineClose>
-                </button>
-                <div ref={menuBox} className="ResposiveMenuMobile">
-                    <div className="ConTainerFluid FlexCenterItem">
-                    <div className="titleBox">
-                        <a>Our Misson</a>
-                        <a>About MillionairaMaker</a>
+        <>  
+            <div ref={Header} className="ConTainerFull">
+                <div  className="Header">
+                    <div className="BtnHeaderBox">
+                        <button ref={btnMenu} onClick={openMenu} className="BtnMenuResposive">
+                            <AiOutlineMenu></AiOutlineMenu>
+                        </button>
+                        <button ref={btnCloseMenu} onClick={closeMenu} className="BtnCloseResposive">
+                            <AiOutlineClose></AiOutlineClose>
+                        </button>
                     </div>
+                    <div ref={menuBox} className="ResposiveMenuMobile">
+                        <div className="ConTainerFluid FlexCenterItem">
+                            <div className="titleBox">
+                                <a>Our Misson</a>
+                                <a>About MillionairaMaker</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -59,20 +66,20 @@ function HomePage() {
                         <div className="ItemBox03 FlexCenterItem GrapItemBody">
                             <Link href="/gold">
                                 <div className="SubItemBox03 FlexCenterItem">
-                                    <img className="ImgItem03" src="/Static/Asset 5.png"/>
-                                    <p className="ContentItem03">Solotto Gold</p>
+                                    <img className="ImgItem03" src="/Static/Asset 6.png"/>
+                                    <p className="ContentItem03">SoLotto Gold</p>
                                 </div>
                             </Link>
                             <Link href="/bronze">
                                 <div className="SubItemBox03 FlexCenterItem">
-                                    <img className="ImgItem03" src="/Static/Asset 6.png"/>
-                                    <p className="ContentItem03">Solotto Bronze</p>
+                                    <img className="ImgItem03" src="/Static/Asset 5.png"/>
+                                    <p className="ContentItem03">SoLotto Bronze</p>
                                 </div>
                             </Link>
                             <Link href="/mini">
                                 <div className="SubItemBox03 FlexCenterItem">
                                     <img className="ImgItem03" src="/Static/Asset 7.png"/>
-                                    <p className="ContentItem03">Solotto Mini</p>
+                                    <p className="ContentItem03">SoLotto Mini</p>
                                 </div>
                             </Link>
                         </div>
@@ -89,7 +96,7 @@ function HomePage() {
                         <div className="ItemBox05 FlexCenterItem GrapItemBody">
                             <div className="SubItemBox05 FlexCenterItem">
                                 <img className="ImgItemBox05" src="/Static/Asset 10.png"/>
-                                <p className="ContentBox05">Solotto SoLMiLL</p>
+                                <p className="ContentBox05">SoLotto SoLMiLL</p>
                             </div>
                         </div>
                     </div>
