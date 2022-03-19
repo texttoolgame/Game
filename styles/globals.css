@@ -196,9 +196,6 @@ body {
 .IconBoxItemFooter02{
   padding: 0 60px;
 }
-.IconBoxItemFooter02:last-child{
-  padding-right: 100px;
-}
 .ItemFooter03{
   font-size: 21px;
   padding: 20px;
