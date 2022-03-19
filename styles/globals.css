@@ -235,7 +235,9 @@ body {
   .BtnHeaderBox{
     display: none;
   }
-  
+  .IconBoxItemFooter02:first-child{
+    align-items: flex-end;
+  }
 }
 
 
@@ -287,6 +289,9 @@ body {
   }
   .ItemFooter01{
     font-size: 34px;
+  }
+  .IconBoxItemFooter02:first-child{
+    align-items: flex-end;
   }
 }
 
