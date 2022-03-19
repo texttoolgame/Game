@@ -44,7 +44,7 @@ function HomePage() {
                 </div>
             </div>
             <div className="Bodybox">
-                <div className="ConTainerFluid">
+                <div className="    ">
                     <div className="ItemBox01 FlexCenterItem GrapItemBody">
                         <p>
                             Solotto.org is a game where you can win NFTs, which can become high vaulue NFTs.
@@ -115,7 +115,6 @@ function HomePage() {
                             </div>
                         </div>
                         <div className="boderspace">
-                            
                         </div>
                     </div>
                     <div className="ConTainerFluid">

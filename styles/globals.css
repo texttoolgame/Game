@@ -590,6 +590,10 @@ body {
     background-size: cover;
     margin: auto 10px;
   }
+  .ImgItemBox04 > .iconNFT {
+    height: 35%;
+    width: auto;
+  }
   .Img03 .FlexCenterItem:first-child{
     margin-top: -5px;
   }
@@ -598,11 +602,51 @@ body {
   }
   
 }
-@media screen and (max-width: 391px) {
-  
+
+@media screen and (max-width: 389px) {
+  .BtnHeaderBox{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .ConTainerFluid{
+    width: 92vw;
+    margin: auto;
+  }
+  .Header{
+    position: relative;
+  }
+  .BtnMenuResposive,
+  .BtnCloseResposive{
+    background: none;
+    color: white;
+    font-style: bold;
+    font-size: 40px;
+    margin: 10px 20px;
+    border: none;
+  }
+  .BtnCloseResposive{
+    display: none;
+  }
+  .ResposiveMenuMobile{
+    height: 100vh;
+    display: none;
+    background-color: #200027;
+    position: absolute;
+    top: 69px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+  }
+  .ItemBox01{
+    font-size: 18px;
+    width: 100%;
+  }
   .Img03{
     background-image: url("../public/Static/Asset\ 19.png");
     font-size: 16px;
+    background-size: contain;
+    background-repeat: no-repeat;
   }
   .Img03 .FlexCenterItem:first-child{
     margin-top: -5px;
@@ -610,12 +654,17 @@ body {
   .Img03 .FlexCenterItem:last-child{
     height: 15px;
   }
-
   .iconNFT {
     height: 100%;
     width: auto;
     background-size: cover;
     margin: auto 10px;
+  }
+  .ItemBox03{
+    flex-direction: column;
+  }
+  .SubItemBox03{
+    margin: 20px 0;
   }
   .ImgItemBox04 > .iconNFT {
     height: 35%;
@@ -626,7 +675,28 @@ body {
   }
   .ItemFooter03 {
     font-size: 12px;
-}
+  }
+  .CommissonBox{
+    font-size: 16px;
+  }
+  .ImgItemBox04{
+    background-size: contain;
+    font-size: 20px;
+    width: 100%;
+    height: 60px;
+    background-repeat: no-repeat;
+    background-position: 50%;
+  }
+  .ItemFooter02{
+    display: flex;
+    flex-direction: column;
+  }
+  .ItemFooter03 {
+    font-size: 14px;
+  }
+  .TitleContentItemBox06{
+    font-size: 30px;
+  }
 }
 /* common resposmobile */
 @media screen and (max-width: 1280px){
@@ -647,7 +717,7 @@ body {
     text-align: center;
   }
   .CommissonBox{
-    font-size: 20px;
+    font-size: 18px;
   }
   .GrapItemBody{
     padding: 20px 0;
