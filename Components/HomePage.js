@@ -78,7 +78,7 @@ function HomePage() {
                                 <div className="SubItemBox03 FlexCenterItem">
                                     <img className="ImgItem03" src="/Static/Asset 5.png"/>
                                     <p className="ContentItem03">SoLotto Gold</p>
-                                    <p className="SubContentItem03">Open 21.Mar.2022 UTC 17:00</p>
+                                    <p className="SubContentItem03">Open 21.Mar.2022 UTC 7:00</p>
                                 </div>
                             </Link>
                             <Link href="/bronze">
