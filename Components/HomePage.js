@@ -106,13 +106,16 @@ function HomePage() {
                                 <img src="/Static/Asset 9.png" className="iconNFT"/>
                             </div>
                         </div>
-                        <div className="boderspace">
+                        <div>
                             <div className="ItemBox05 FlexCenterItem GrapItemBody">
                                 <div className="SubItemBox05 FlexCenterItem">
                                     <img className="ImgItemBox05" src="/Static/Asset 10.png"/>
                                     <p className="ContentBox05">SoLotto SoLMiLL</p>
                                 </div>
                             </div>
+                        </div>
+                        <div className="boderspace">
+                            
                         </div>
                     </div>
                     <div className="ConTainerFluid">

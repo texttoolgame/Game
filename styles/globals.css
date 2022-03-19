@@ -569,6 +569,9 @@ body {
     align-items: center;
     justify-content: center;
   }
+  .ItemFooter01{
+    font-size: 26px;
+  }
   .ItemFooter02{
     flex-direction: column;
   }
@@ -580,6 +583,18 @@ body {
   }
   .TitleContentItemBox06{
     font-size: 36px;
+  }
+  .iconNFT {
+    height: 100%;
+    width: auto;
+    background-size: cover;
+    margin: auto 10px;
+  }
+  .Img03 .FlexCenterItem:first-child{
+    margin-top: -5px;
+  }
+  .Img03 .FlexCenterItem:last-child{
+    height: 15px;
   }
   
 }
@@ -656,5 +671,11 @@ body {
     flex-direction: row;
     justify-content: center;
   }
+  .boderspace{
+    width: 90vw;
+  }
+  .ItemFooter03 {
+    font-size: 16px;
+}
 }
 /* End common resposmobile */
