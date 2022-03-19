@@ -222,6 +222,10 @@ body {
   font-family: JosefinSansBold;
   font-size: 40px;
 }
+.ImgItemFooter02{
+  height: 91px;
+  width: auto;
+}
 /* Pc */
 @media screen and (min-width: 1280px){
   .ConTainerFluid{
@@ -734,7 +738,7 @@ body {
     padding: 20px 0;
   }
   .IconBoxItemFooter02 > .ImgItemFooter02 {
-    height: 140px;
+    height: 91px;
     width: auto;
   }
   .ItemFooter01{

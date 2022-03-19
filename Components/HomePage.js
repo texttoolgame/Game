@@ -160,6 +160,7 @@ function HomePage() {
                             <img className="ImgItemFooter02" src="/Static/Asset 11.png" />
                             <img className="ImgItemFooter02" src="/Static/Asset 12.png" />
                             <img className="ImgItemFooter02" src="/Static/Asset 13.png" />
+                            <img className="ImgItemFooter02" src="https://millionairemaker.art/assets/logo.png" />
                         </div>
                         <div className="IconBoxItemFooter02 ">
                             <div className="ItemFooter01 fontSize30px">
