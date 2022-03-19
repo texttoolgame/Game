@@ -70,23 +70,29 @@ function HomePage() {
                                 </div>
                             </div>
                         </div>
+                        <div className="GrapItemBody FlexCenterItem CommissonBox">
+                            <h1>COMING SOON...</h1>
+                        </div>
                         <div className="ItemBox03 FlexCenterItem GrapItemBody">
                             <Link href="/gold">
                                 <div className="SubItemBox03 FlexCenterItem">
-                                    <img className="ImgItem03" src="/Static/Asset 6.png"/>
+                                    <img className="ImgItem03" src="/Static/Asset 5.png"/>
                                     <p className="ContentItem03">SoLotto Gold</p>
+                                    <p className="SubContentItem03">Open 21.Mar.2022 UCT 17:00</p>
                                 </div>
                             </Link>
                             <Link href="/bronze">
                                 <div className="SubItemBox03 FlexCenterItem">
-                                    <img className="ImgItem03" src="/Static/Asset 5.png"/>
+                                    <img className="ImgItem03" src="/Static/Asset 7.png"/>
                                     <p className="ContentItem03">SoLotto Bronze</p>
+                                    <p className="SubContentItem03">Open 19.Mar.2022 UCT 7:00</p>
                                 </div>
                             </Link>
                             <Link href="/mini">
                                 <div className="SubItemBox03 FlexCenterItem">
-                                    <img className="ImgItem03" src="/Static/Asset 7.png"/>
+                                    <img className="ImgItem03" src="/Static/Asset 6.png"/>
                                     <p className="ContentItem03">SoLotto Mini</p>
+                                    <p className="SubContentItem03">Open 19.Mar.2022 UCT 17:00</p>
                                 </div>
                             </Link>
                         </div>

@@ -24,6 +24,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 
 /* fontstyled */
@@ -72,6 +73,7 @@ body {
 }
 .titleBox > p{
   padding: 30px;
+  cursor: pointer;
 }
 .LogoHeader{
   width: 50px;
@@ -79,6 +81,7 @@ body {
   position: absolute;
   left: 20px;
   top: 15px;
+  cursor: pointer;
 }
 .Bodybox{
   background-image: url("../public/Static/Asset\ 16.png");
@@ -117,6 +120,7 @@ body {
   font-family: UTMAvoBold;
   font-style: Bold;
   background-position: 50%;
+  cursor: pointer;
 }
 .Img03 > p {
   margin: 0 5px;
@@ -139,11 +143,16 @@ body {
   box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.2);
   cursor: pointer;
 }
+.SubContentItem03{
+  color: black;
+  font-size: 16px;
+  padding: 5px 
+}
 .ImgItem03{
   width: auto;
   height: auto;
 }
-.SubItemBox03 > p{
+.SubItemBox03 > p:not(:last-child){
   padding-top: 40px;
 }
 .ImgItemBox04{
@@ -151,6 +160,7 @@ body {
   width: 805px;
   height: 87px;
   font-size: 36px;
+  cursor: pointer;
 }
 .boderspace{
   width: 65%;
@@ -209,6 +219,10 @@ body {
   font-size: 18px;
   padding: 15px 0;
 }
+.CommissonBox{
+  font-family: JosefinSansBold;
+  font-size: 40px;
+}
 /* Pc */
 @media screen and (min-width: 1280px){
   .ConTainerFluid{
@@ -218,6 +232,7 @@ body {
   .BtnHeaderBox{
     display: none;
   }
+  
 }
 
 
@@ -245,6 +260,9 @@ body {
     background-size: contain;
     background-repeat: no-repeat;
     font-size: 28px;
+  }
+  .CommissonBox{
+    font-size: 35px;
   }
   .SubItemBox03,
   .SubItemBox05{
@@ -327,6 +345,9 @@ body {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: 50%;
+  }
+  .CommissonBox{
+    font-size: 30px;
   }
   .ItemBox03{
     justify-content: space-around;
@@ -426,6 +447,9 @@ body {
     background-repeat: no-repeat;
     background-position: 50%;
   }
+  .CommissonBox{
+    font-size: 25px;
+  }
   .ItemBox03{
     justify-content: space-around;
     font-style: Bold;
@@ -511,12 +535,15 @@ body {
   }
   .Img03{
     width: 100%;
-    height: 55px;
-    font-size: 10px;
+    height: 60px;
+    font-size: 18px;
     font-family: UTMAvoBold;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: 50%;
+  }
+  .CommissonBox{
+    font-size: 23px;
   }
   .ItemBox03{
     justify-content: space-around;
@@ -584,10 +611,22 @@ body {
   .LogoHeader{
     left: 47%;
   }
+  .titleBox{
+    font-size: 30px;
+  }
+  .titleBox > p{
+    border-bottom: 1px solid #ccc;
+    width: 90vw;
+    text-align: center;
+  }
+  .CommissonBox{
+    font-size: 20px;
+  }
   .GrapItemBody{
     padding: 20px 0;
   }
   .Img03{
+    background-image: url("../public/Static/Asset\ 17.png");
     flex-direction: column;
   }
   .ItemBox06{
