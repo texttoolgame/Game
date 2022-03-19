@@ -584,6 +584,9 @@ body {
   .ItemFooter02{
     flex-direction: column;
   }
+  .ItemFooter03{
+    font-size: 14px;
+  }
   .IconBoxItemFooter02{
     padding: 20px 0;
   }
@@ -701,7 +704,7 @@ body {
     flex-direction: column;
   }
   .ItemFooter03 {
-    font-size: 14px;
+    font-size: 12px;
   }
   .TitleContentItemBox06{
     font-size: 30px;
@@ -753,8 +756,5 @@ body {
   .boderspace{
     width: 90vw;
   }
-  .ItemFooter03 {
-    font-size: 16px;
-}
 }
 /* End common resposmobile */
