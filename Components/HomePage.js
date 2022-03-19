@@ -146,9 +146,6 @@ function HomePage() {
                                 <p>'USD Coins' will be used to purchase NFT tickets.</p>
                                 <p>'Solana' will be used to pay gas fees. (Gas fees of the Solana-Chain's USD Coins are nominal)​</p>
                                 <p>Prepare these correctly and bring out your good fortune.</p>
-                            </div><div className="SubBox01ItemBox06">
-                                <h6 className="TitleContentItemBox06"></h6>
-                                <p>​​</p>
                             </div>
                         </div>
                     </div>
